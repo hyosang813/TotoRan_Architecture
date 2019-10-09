@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1783887A234D654C00B17CC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17838879234D654C00B17CC5 /* AppDelegate.swift */; };
+		1783887C234D654C00B17CC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1783887B234D654C00B17CC5 /* SceneDelegate.swift */; };
+		1783887E234D654C00B17CC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1783887D234D654C00B17CC5 /* ContentView.swift */; };
+		17838880234D654E00B17CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1783887F234D654E00B17CC5 /* Assets.xcassets */; };
+		17838883234D654E00B17CC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17838882234D654E00B17CC5 /* Preview Assets.xcassets */; };
+		17838886234D654E00B17CC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17838884234D654E00B17CC5 /* LaunchScreen.storyboard */; };
+		17838891234D654F00B17CC5 /* TotoRanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17838890234D654F00B17CC5 /* TotoRanTests.swift */; };
+		1783889C234D654F00B17CC5 /* TotoRanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1783889B234D654F00B17CC5 /* TotoRanUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1783888D234D654F00B17CC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1783886E234D654B00B17CC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17838875234D654B00B17CC5;
+			remoteInfo = TotoRan;
+		};
+		17838898234D654F00B17CC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1783886E234D654B00B17CC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17838875234D654B00B17CC5;
+			remoteInfo = TotoRan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17838876234D654B00B17CC5 /* TotoRan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TotoRan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17838879234D654C00B17CC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1783887B234D654C00B17CC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1783887D234D654C00B17CC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1783887F234D654E00B17CC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17838882234D654E00B17CC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		17838885234D654E00B17CC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		17838887234D654E00B17CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1783888C234D654F00B17CC5 /* TotoRanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TotoRanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17838890234D654F00B17CC5 /* TotoRanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotoRanTests.swift; sourceTree = "<group>"; };
+		17838892234D654F00B17CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17838897234D654F00B17CC5 /* TotoRanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TotoRanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1783889B234D654F00B17CC5 /* TotoRanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotoRanUITests.swift; sourceTree = "<group>"; };
+		1783889D234D654F00B17CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17838873234D654B00B17CC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17838889234D654F00B17CC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17838894234D654F00B17CC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1783886D234D654B00B17CC5 = {
+			isa = PBXGroup;
+			children = (
+				17838878234D654C00B17CC5 /* TotoRan */,
+				1783888F234D654F00B17CC5 /* TotoRanTests */,
+				1783889A234D654F00B17CC5 /* TotoRanUITests */,
+				17838877234D654B00B17CC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17838877234D654B00B17CC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17838876234D654B00B17CC5 /* TotoRan.app */,
+				1783888C234D654F00B17CC5 /* TotoRanTests.xctest */,
+				17838897234D654F00B17CC5 /* TotoRanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17838878234D654C00B17CC5 /* TotoRan */ = {
+			isa = PBXGroup;
+			children = (
+				17838879234D654C00B17CC5 /* AppDelegate.swift */,
+				1783887B234D654C00B17CC5 /* SceneDelegate.swift */,
+				1783887D234D654C00B17CC5 /* ContentView.swift */,
+				1783887F234D654E00B17CC5 /* Assets.xcassets */,
+				17838884234D654E00B17CC5 /* LaunchScreen.storyboard */,
+				17838887234D654E00B17CC5 /* Info.plist */,
+				17838881234D654E00B17CC5 /* Preview Content */,
+			);
+			path = TotoRan;
+			sourceTree = "<group>";
+		};
+		17838881234D654E00B17CC5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				17838882234D654E00B17CC5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1783888F234D654F00B17CC5 /* TotoRanTests */ = {
+			isa = PBXGroup;
+			children = (
+				17838890234D654F00B17CC5 /* TotoRanTests.swift */,
+				17838892234D654F00B17CC5 /* Info.plist */,
+			);
+			path = TotoRanTests;
+			sourceTree = "<group>";
+		};
+		1783889A234D654F00B17CC5 /* TotoRanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1783889B234D654F00B17CC5 /* TotoRanUITests.swift */,
+				1783889D234D654F00B17CC5 /* Info.plist */,
+			);
+			path = TotoRanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17838875234D654B00B17CC5 /* TotoRan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 178388A0234D654F00B17CC5 /* Build configuration list for PBXNativeTarget "TotoRan" */;
+			buildPhases = (
+				17838872234D654B00B17CC5 /* Sources */,
+				17838873234D654B00B17CC5 /* Frameworks */,
+				17838874234D654B00B17CC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TotoRan;
+			productName = TotoRan;
+			productReference = 17838876234D654B00B17CC5 /* TotoRan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1783888B234D654F00B17CC5 /* TotoRanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 178388A3234D654F00B17CC5 /* Build configuration list for PBXNativeTarget "TotoRanTests" */;
+			buildPhases = (
+				17838888234D654F00B17CC5 /* Sources */,
+				17838889234D654F00B17CC5 /* Frameworks */,
+				1783888A234D654F00B17CC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1783888E234D654F00B17CC5 /* PBXTargetDependency */,
+			);
+			name = TotoRanTests;
+			productName = TotoRanTests;
+			productReference = 1783888C234D654F00B17CC5 /* TotoRanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17838896234D654F00B17CC5 /* TotoRanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 178388A6234D654F00B17CC5 /* Build configuration list for PBXNativeTarget "TotoRanUITests" */;
+			buildPhases = (
+				17838893234D654F00B17CC5 /* Sources */,
+				17838894234D654F00B17CC5 /* Frameworks */,
+				17838895234D654F00B17CC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17838899234D654F00B17CC5 /* PBXTargetDependency */,
+			);
+			name = TotoRanUITests;
+			productName = TotoRanUITests;
+			productReference = 17838897234D654F00B17CC5 /* TotoRanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1783886E234D654B00B17CC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = kosou.tei;
+				TargetAttributes = {
+					17838875234D654B00B17CC5 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					1783888B234D654F00B17CC5 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 17838875234D654B00B17CC5;
+					};
+					17838896234D654F00B17CC5 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 17838875234D654B00B17CC5;
+					};
+				};
+			};
+			buildConfigurationList = 17838871234D654B00B17CC5 /* Build configuration list for PBXProject "TotoRan" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1783886D234D654B00B17CC5;
+			productRefGroup = 17838877234D654B00B17CC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17838875234D654B00B17CC5 /* TotoRan */,
+				1783888B234D654F00B17CC5 /* TotoRanTests */,
+				17838896234D654F00B17CC5 /* TotoRanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17838874234D654B00B17CC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17838886234D654E00B17CC5 /* LaunchScreen.storyboard in Resources */,
+				17838883234D654E00B17CC5 /* Preview Assets.xcassets in Resources */,
+				17838880234D654E00B17CC5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1783888A234D654F00B17CC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17838895234D654F00B17CC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17838872234D654B00B17CC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1783887A234D654C00B17CC5 /* AppDelegate.swift in Sources */,
+				1783887C234D654C00B17CC5 /* SceneDelegate.swift in Sources */,
+				1783887E234D654C00B17CC5 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17838888234D654F00B17CC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17838891234D654F00B17CC5 /* TotoRanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17838893234D654F00B17CC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1783889C234D654F00B17CC5 /* TotoRanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1783888E234D654F00B17CC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17838875234D654B00B17CC5 /* TotoRan */;
+			targetProxy = 1783888D234D654F00B17CC5 /* PBXContainerItemProxy */;
+		};
+		17838899234D654F00B17CC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17838875234D654B00B17CC5 /* TotoRan */;
+			targetProxy = 17838898234D654F00B17CC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17838884234D654E00B17CC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17838885234D654E00B17CC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1783889E234D654F00B17CC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1783889F234D654F00B17CC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		178388A1234D654F00B17CC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TotoRan/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TotoRan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tei.kosou.TotoRan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		178388A2234D654F00B17CC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TotoRan/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TotoRan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tei.kosou.TotoRan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		178388A4234D654F00B17CC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TotoRanTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tei.kosou.TotoRanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TotoRan.app/TotoRan";
+			};
+			name = Debug;
+		};
+		178388A5234D654F00B17CC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TotoRanTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tei.kosou.TotoRanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TotoRan.app/TotoRan";
+			};
+			name = Release;
+		};
+		178388A7234D654F00B17CC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TotoRanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tei.kosou.TotoRanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TotoRan;
+			};
+			name = Debug;
+		};
+		178388A8234D654F00B17CC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TotoRanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tei.kosou.TotoRanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TotoRan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17838871234D654B00B17CC5 /* Build configuration list for PBXProject "TotoRan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1783889E234D654F00B17CC5 /* Debug */,
+				1783889F234D654F00B17CC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		178388A0234D654F00B17CC5 /* Build configuration list for PBXNativeTarget "TotoRan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				178388A1234D654F00B17CC5 /* Debug */,
+				178388A2234D654F00B17CC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		178388A3234D654F00B17CC5 /* Build configuration list for PBXNativeTarget "TotoRanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				178388A4234D654F00B17CC5 /* Debug */,
+				178388A5234D654F00B17CC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		178388A6234D654F00B17CC5 /* Build configuration list for PBXNativeTarget "TotoRanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				178388A7234D654F00B17CC5 /* Debug */,
+				178388A8234D654F00B17CC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1783886E234D654B00B17CC5 /* Project object */;
+}
