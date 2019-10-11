@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,9 +15,6 @@
 		17838886234D654E00B17CC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17838884234D654E00B17CC5 /* LaunchScreen.storyboard */; };
 		17838891234D654F00B17CC5 /* TotoRanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17838890234D654F00B17CC5 /* TotoRanTests.swift */; };
 		1783889C234D654F00B17CC5 /* TotoRanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1783889B234D654F00B17CC5 /* TotoRanUITests.swift */; };
-		42EA01174652EE4B463F4147 /* Pods_TotoRan_TotoRanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD131833AEE7153C1DD57A9 /* Pods_TotoRan_TotoRanUITests.framework */; };
-		A0C6EEDC58F3C6F9BC559328 /* Pods_TotoRan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76E44550DC22590DE5A00C2 /* Pods_TotoRan.framework */; };
-		DBF623C09294198C87A1BA2B /* Pods_TotoRanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE7643CF02D3A42EBCFF033 /* Pods_TotoRanTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,13 +49,10 @@
 		17838897234D654F00B17CC5 /* TotoRanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TotoRanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1783889B234D654F00B17CC5 /* TotoRanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotoRanUITests.swift; sourceTree = "<group>"; };
 		1783889D234D654F00B17CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BE7643CF02D3A42EBCFF033 /* Pods_TotoRanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TotoRanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AD131833AEE7153C1DD57A9 /* Pods_TotoRan_TotoRanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TotoRan_TotoRanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F00E8130725C3C072FE2113 /* Pods-TotoRan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRan.debug.xcconfig"; path = "Target Support Files/Pods-TotoRan/Pods-TotoRan.debug.xcconfig"; sourceTree = "<group>"; };
 		8E771BC00B95CB3A2866C2F5 /* Pods-TotoRan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRan.release.xcconfig"; path = "Target Support Files/Pods-TotoRan/Pods-TotoRan.release.xcconfig"; sourceTree = "<group>"; };
 		BEDE00F9E11063B84612D6BE /* Pods-TotoRan-TotoRanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRan-TotoRanUITests.release.xcconfig"; path = "Target Support Files/Pods-TotoRan-TotoRanUITests/Pods-TotoRan-TotoRanUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E008D6FA54D0924F013FD606 /* Pods-TotoRan-TotoRanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRan-TotoRanUITests.debug.xcconfig"; path = "Target Support Files/Pods-TotoRan-TotoRanUITests/Pods-TotoRan-TotoRanUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E76E44550DC22590DE5A00C2 /* Pods_TotoRan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TotoRan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06EB11F6A6FFC5CE3BE44AC /* Pods-TotoRanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRanTests.release.xcconfig"; path = "Target Support Files/Pods-TotoRanTests/Pods-TotoRanTests.release.xcconfig"; sourceTree = "<group>"; };
 		F38496143884D8C015C1A467 /* Pods-TotoRanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRanTests.debug.xcconfig"; path = "Target Support Files/Pods-TotoRanTests/Pods-TotoRanTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0C6EEDC58F3C6F9BC559328 /* Pods_TotoRan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF623C09294198C87A1BA2B /* Pods_TotoRanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +76,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42EA01174652EE4B463F4147 /* Pods_TotoRan_TotoRanUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,16 +92,12 @@
 				F38496143884D8C015C1A467 /* Pods-TotoRanTests.debug.xcconfig */,
 				F06EB11F6A6FFC5CE3BE44AC /* Pods-TotoRanTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		13E885F5AEA1A4E90405323F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E76E44550DC22590DE5A00C2 /* Pods_TotoRan.framework */,
-				3AD131833AEE7153C1DD57A9 /* Pods_TotoRan_TotoRanUITests.framework */,
-				1BE7643CF02D3A42EBCFF033 /* Pods_TotoRanTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
