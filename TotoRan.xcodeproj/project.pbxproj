@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026A5B07523EA382D8FC746D /* Pods_Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB51A0C13680ACE6DD346286 /* Pods_Infra.framework */; };
 		174F3F4223500FDC00A40DD6 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174F3F3923500FDB00A40DD6 /* Domain.framework */; };
 		174F3F4923500FDC00A40DD6 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174F3F4823500FDC00A40DD6 /* DomainTests.swift */; };
 		174F3F4B23500FDC00A40DD6 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 174F3F3B23500FDB00A40DD6 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,10 +26,12 @@
 		17838886234D654E00B17CC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17838884234D654E00B17CC5 /* LaunchScreen.storyboard */; };
 		17838891234D654F00B17CC5 /* TotoRanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17838890234D654F00B17CC5 /* TotoRanTests.swift */; };
 		1783889C234D654F00B17CC5 /* TotoRanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1783889B234D654F00B17CC5 /* TotoRanUITests.swift */; };
+		21B453EA48D0DDE16F2ACBC8 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF15D797A379341C3095B97 /* Pods_Domain.framework */; };
 		9EB354292417C90B00EEFF14 /* DummyRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB354282417C90B00EEFF14 /* DummyRepositoryImpl.swift */; };
 		9EB3542C2417C98F00EEFF14 /* DumyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3542B2417C98F00EEFF14 /* DumyEntity.swift */; };
 		9EB3542F2417C9E700EEFF14 /* DummyMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3542E2417C9E700EEFF14 /* DummyMapper.swift */; };
 		9EB354322417CA6B00EEFF14 /* DummyRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB354312417CA6B00EEFF14 /* DummyRest.swift */; };
+		B5253D0E966BB510B4BAE5FD /* Pods_TotoRan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D496BCDB11C318BA542E33E /* Pods_TotoRan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1405A33F22C55F1E93ABCE70 /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
 		174F3F3923500FDB00A40DD6 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		174F3F3B23500FDB00A40DD6 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		174F3F3C23500FDB00A40DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,16 +143,18 @@
 		17838897234D654F00B17CC5 /* TotoRanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TotoRanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1783889B234D654F00B17CC5 /* TotoRanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotoRanUITests.swift; sourceTree = "<group>"; };
 		1783889D234D654F00B17CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		251B9336CC9F51C10F62559E /* Pods-Infra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra.debug.xcconfig"; path = "Target Support Files/Pods-Infra/Pods-Infra.debug.xcconfig"; sourceTree = "<group>"; };
+		48105BEF17C56CB3E0C7EBA8 /* Pods-Infra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infra.release.xcconfig"; path = "Target Support Files/Pods-Infra/Pods-Infra.release.xcconfig"; sourceTree = "<group>"; };
 		4F00E8130725C3C072FE2113 /* Pods-TotoRan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRan.debug.xcconfig"; path = "Target Support Files/Pods-TotoRan/Pods-TotoRan.debug.xcconfig"; sourceTree = "<group>"; };
+		7D496BCDB11C318BA542E33E /* Pods_TotoRan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TotoRan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EF15D797A379341C3095B97 /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E771BC00B95CB3A2866C2F5 /* Pods-TotoRan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRan.release.xcconfig"; path = "Target Support Files/Pods-TotoRan/Pods-TotoRan.release.xcconfig"; sourceTree = "<group>"; };
 		9EB354282417C90B00EEFF14 /* DummyRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyRepositoryImpl.swift; sourceTree = "<group>"; };
 		9EB3542B2417C98F00EEFF14 /* DumyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumyEntity.swift; sourceTree = "<group>"; };
 		9EB3542E2417C9E700EEFF14 /* DummyMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyMapper.swift; sourceTree = "<group>"; };
 		9EB354312417CA6B00EEFF14 /* DummyRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyRest.swift; sourceTree = "<group>"; };
-		BEDE00F9E11063B84612D6BE /* Pods-TotoRan-TotoRanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRan-TotoRanUITests.release.xcconfig"; path = "Target Support Files/Pods-TotoRan-TotoRanUITests/Pods-TotoRan-TotoRanUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E008D6FA54D0924F013FD606 /* Pods-TotoRan-TotoRanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRan-TotoRanUITests.debug.xcconfig"; path = "Target Support Files/Pods-TotoRan-TotoRanUITests/Pods-TotoRan-TotoRanUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F06EB11F6A6FFC5CE3BE44AC /* Pods-TotoRanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRanTests.release.xcconfig"; path = "Target Support Files/Pods-TotoRanTests/Pods-TotoRanTests.release.xcconfig"; sourceTree = "<group>"; };
-		F38496143884D8C015C1A467 /* Pods-TotoRanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRanTests.debug.xcconfig"; path = "Target Support Files/Pods-TotoRanTests/Pods-TotoRanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB51A0C13680ACE6DD346286 /* Pods_Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B3770E56AD43CF14D65316 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B453EA48D0DDE16F2ACBC8 /* Pods_Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026A5B07523EA382D8FC746D /* Pods_Infra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +196,7 @@
 			files = (
 				174F3F4E23500FDC00A40DD6 /* Domain.framework in Frameworks */,
 				174F3F712350102E00A40DD6 /* Infra.framework in Frameworks */,
+				B5253D0E966BB510B4BAE5FD /* Pods_TotoRan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,10 +222,10 @@
 			children = (
 				4F00E8130725C3C072FE2113 /* Pods-TotoRan.debug.xcconfig */,
 				8E771BC00B95CB3A2866C2F5 /* Pods-TotoRan.release.xcconfig */,
-				E008D6FA54D0924F013FD606 /* Pods-TotoRan-TotoRanUITests.debug.xcconfig */,
-				BEDE00F9E11063B84612D6BE /* Pods-TotoRan-TotoRanUITests.release.xcconfig */,
-				F38496143884D8C015C1A467 /* Pods-TotoRanTests.debug.xcconfig */,
-				F06EB11F6A6FFC5CE3BE44AC /* Pods-TotoRanTests.release.xcconfig */,
+				1405A33F22C55F1E93ABCE70 /* Pods-Domain.debug.xcconfig */,
+				E8B3770E56AD43CF14D65316 /* Pods-Domain.release.xcconfig */,
+				251B9336CC9F51C10F62559E /* Pods-Infra.debug.xcconfig */,
+				48105BEF17C56CB3E0C7EBA8 /* Pods-Infra.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -224,6 +233,9 @@
 		13E885F5AEA1A4E90405323F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7D496BCDB11C318BA542E33E /* Pods_TotoRan.framework */,
+				7EF15D797A379341C3095B97 /* Pods_Domain.framework */,
+				BB51A0C13680ACE6DD346286 /* Pods_Infra.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -396,6 +408,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 174F3F5523500FDC00A40DD6 /* Build configuration list for PBXNativeTarget "Domain" */;
 			buildPhases = (
+				070157E619F94157809C1B4D /* [CP] Check Pods Manifest.lock */,
 				174F3F3423500FDB00A40DD6 /* Headers */,
 				174F3F3523500FDB00A40DD6 /* Sources */,
 				174F3F3623500FDB00A40DD6 /* Frameworks */,
@@ -433,6 +446,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 174F3F732350102E00A40DD6 /* Build configuration list for PBXNativeTarget "Infra" */;
 			buildPhases = (
+				C5F086BA5ECE9A98D897C936 /* [CP] Check Pods Manifest.lock */,
 				174F3F572350102E00A40DD6 /* Headers */,
 				174F3F582350102E00A40DD6 /* Sources */,
 				174F3F592350102E00A40DD6 /* Frameworks */,
@@ -475,7 +489,6 @@
 				17838872234D654B00B17CC5 /* Sources */,
 				17838873234D654B00B17CC5 /* Frameworks */,
 				17838874234D654B00B17CC5 /* Resources */,
-				FBE4F355885E38E9A2118F7A /* [CP] Embed Pods Frameworks */,
 				174F3F5023500FDC00A40DD6 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -493,7 +506,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 178388A3234D654F00B17CC5 /* Build configuration list for PBXNativeTarget "TotoRanTests" */;
 			buildPhases = (
-				CC08621534887A31BD748840 /* [CP] Check Pods Manifest.lock */,
 				17838888234D654F00B17CC5 /* Sources */,
 				17838889234D654F00B17CC5 /* Frameworks */,
 				1783888A234D654F00B17CC5 /* Resources */,
@@ -512,11 +524,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 178388A6234D654F00B17CC5 /* Build configuration list for PBXNativeTarget "TotoRanUITests" */;
 			buildPhases = (
-				47C8EC5CC93E97A2C6958FE1 /* [CP] Check Pods Manifest.lock */,
 				17838893234D654F00B17CC5 /* Sources */,
 				17838894234D654F00B17CC5 /* Frameworks */,
 				17838895234D654F00B17CC5 /* Resources */,
-				040E9C4CD47A90DF36A7BC0A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -646,24 +656,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		040E9C4CD47A90DF36A7BC0A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TotoRan-TotoRanUITests/Pods-TotoRan-TotoRanUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TotoRan-TotoRanUITests/Pods-TotoRan-TotoRanUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TotoRan-TotoRanUITests/Pods-TotoRan-TotoRanUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		47C8EC5CC93E97A2C6958FE1 /* [CP] Check Pods Manifest.lock */ = {
+		070157E619F94157809C1B4D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -678,7 +671,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TotoRan-TotoRanUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Domain-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -707,7 +700,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CC08621534887A31BD748840 /* [CP] Check Pods Manifest.lock */ = {
+		C5F086BA5ECE9A98D897C936 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -722,28 +715,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TotoRanTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Infra-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FBE4F355885E38E9A2118F7A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TotoRan/Pods-TotoRan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TotoRan/Pods-TotoRan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TotoRan/Pods-TotoRan-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -873,6 +849,7 @@
 /* Begin XCBuildConfiguration section */
 		174F3F5123500FDC00A40DD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1405A33F22C55F1E93ABCE70 /* Pods-Domain.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -901,6 +878,7 @@
 		};
 		174F3F5223500FDC00A40DD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8B3770E56AD43CF14D65316 /* Pods-Domain.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -967,6 +945,7 @@
 		};
 		174F3F742350102E00A40DD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251B9336CC9F51C10F62559E /* Pods-Infra.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -997,6 +976,7 @@
 		};
 		174F3F752350102E00A40DD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48105BEF17C56CB3E0C7EBA8 /* Pods-Infra.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1119,6 +1099,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1172,6 +1153,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1222,7 +1204,6 @@
 		};
 		178388A4234D654F00B17CC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F38496143884D8C015C1A467 /* Pods-TotoRanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1244,7 +1225,6 @@
 		};
 		178388A5234D654F00B17CC5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F06EB11F6A6FFC5CE3BE44AC /* Pods-TotoRanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1266,7 +1246,6 @@
 		};
 		178388A7234D654F00B17CC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E008D6FA54D0924F013FD606 /* Pods-TotoRan-TotoRanUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1286,7 +1265,6 @@
 		};
 		178388A8234D654F00B17CC5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEDE00F9E11063B84612D6BE /* Pods-TotoRan-TotoRanUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,21 +1,22 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '13.1'
 
-target 'TotoRan' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+target 'Infra' do
+    use_frameworks!
+    swift_version = '5.0.0'
 
-  # あとでEmbeddedFrameWorkを切ったらInfraで使うけどとりあえず
-  pod "Alamofire"
-  pod "Kanna" # Htmlパーサー
+    pod "Alamofire",'4.9.0'
+    pod "Kanna",'5.0.0'
 
-  target 'TotoRanTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+    target 'TotoRan' do
+      use_frameworks!
+      swift_version = '5.0.0'
+      inherit! :search_paths
+    end
 
-  target 'TotoRanUITests' do
-    # Pods for testing
-  end
-
+    target 'Domain' do
+      use_frameworks!
+      swift_version = '5.0.0'
+      inherit! :search_paths
+    end
 end
