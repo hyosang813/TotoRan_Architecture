@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (4.9.0)
   - Kanna (5.0.0)
+  - RxSwift (6.1.0)
 
 DEPENDENCIES:
   - Alamofire (= 4.9.0)
   - Kanna (= 5.0.0)
+  - RxSwift (= 6.1.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Kanna
+    - RxSwift
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   Kanna: a32875df62975f8f4b871e933b4ea1a5c3b8be0f
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
 
-PODFILE CHECKSUM: 61e407ec81bf9d17c4a31a8c871fa5b3fc9c0ccc
+PODFILE CHECKSUM: 8caf9b013e47b7b74acefe629c52bc978cd2def2
 
 COCOAPODS: 1.10.1

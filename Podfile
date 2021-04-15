@@ -7,6 +7,7 @@ target 'Infra' do
 
     pod "Alamofire",'4.9.0'
     pod "Kanna",'5.0.0'
+    pod "RxSwift",'6.1.0'
 
     target 'TotoRan' do
       use_frameworks!
