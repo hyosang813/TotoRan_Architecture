@@ -7,6 +7,7 @@
 //
 
 import Alamofire
+import Kanna
 import Domain
 import RxSwift
 
@@ -15,6 +16,10 @@ public class TotoDataRepositoryImpl {
     
     let DBNAME = "toto.db"
     
+    enum CustomError: Error {
+        case unknown
+    }
+
     // Databaseファイルの作成
     public func createDataBase() -> Bool {
         let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
@@ -36,5 +41,45 @@ public class TotoDataRepositoryImpl {
         }
         
         return true
+    }
+    
+    // 開催回データ取得
+    public func getKaisaiData() -> Completable {
+        let KAISAI_URL = "https://toto.rakuten.co.jp/toto/schedule/"
+        do {
+            return Completable.create { subscriber in
+                Alamofire.request(KAISAI_URL).responseString { response in
+                    switch response.result {
+                    case .success:
+                        guard let html = response.result.value, self.parseKaisaiHTML(html: html) else {
+                            subscriber(.error(CustomError.unknown))
+                            return
+                        }
+                        subscriber(.completed)
+                    case .failure(let error):
+                        subscriber(.error(error))
+                    }
+                }
+                return Disposables.create()
+            }
+        } catch {
+            return Completable.create { subscriber in
+                subscriber(.error(error))
+                return Disposables.create()
+            }
+        }
+    }
+    
+    // 開催回データのパースとDB保存処理
+    private func parseKaisaiHTML(html: String) -> Bool {
+        if let doc = try? HTML(html: html, encoding: .utf8) {
+            print(doc.title)
+            
+            for link in doc.css("a, link") {
+                print(link.text)
+                print(link["href"])
+            }
+        }
+        return true // とりあえず
     }
 }
