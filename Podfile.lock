@@ -1,24 +1,30 @@
 PODS:
   - Alamofire (4.9.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - Kanna (5.0.0)
   - RxSwift (6.1.0)
 
 DEPENDENCIES:
   - Alamofire (= 4.9.0)
+  - FMDB (= 2.7.5)
   - Kanna (= 5.0.0)
   - RxSwift (= 6.1.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - FMDB
     - Kanna
     - RxSwift
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   Kanna: a32875df62975f8f4b871e933b4ea1a5c3b8be0f
   RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
 
-PODFILE CHECKSUM: 8caf9b013e47b7b74acefe629c52bc978cd2def2
+PODFILE CHECKSUM: 7d455204f57d3efa47bd40d6ba04d2c281cf097f
 
 COCOAPODS: 1.10.1
