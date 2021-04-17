@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,7 +27,7 @@
 		17838891234D654F00B17CC5 /* TotoRanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17838890234D654F00B17CC5 /* TotoRanTests.swift */; };
 		1783889C234D654F00B17CC5 /* TotoRanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1783889B234D654F00B17CC5 /* TotoRanUITests.swift */; };
 		21B453EA48D0DDE16F2ACBC8 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF15D797A379341C3095B97 /* Pods_Domain.framework */; };
-		9EB354292417C90B00EEFF14 /* DummyRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB354282417C90B00EEFF14 /* DummyRepositoryImpl.swift */; };
+		9EB354292417C90B00EEFF14 /* TotDataRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB354282417C90B00EEFF14 /* TotDataRepositoryImpl.swift */; };
 		9EB3542C2417C98F00EEFF14 /* DumyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3542B2417C98F00EEFF14 /* DumyEntity.swift */; };
 		9EB3542F2417C9E700EEFF14 /* DummyMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3542E2417C9E700EEFF14 /* DummyMapper.swift */; };
 		9EB354322417CA6B00EEFF14 /* DummyRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB354312417CA6B00EEFF14 /* DummyRest.swift */; };
@@ -149,7 +149,7 @@
 		7D496BCDB11C318BA542E33E /* Pods_TotoRan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TotoRan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF15D797A379341C3095B97 /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E771BC00B95CB3A2866C2F5 /* Pods-TotoRan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRan.release.xcconfig"; path = "Target Support Files/Pods-TotoRan/Pods-TotoRan.release.xcconfig"; sourceTree = "<group>"; };
-		9EB354282417C90B00EEFF14 /* DummyRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyRepositoryImpl.swift; sourceTree = "<group>"; };
+		9EB354282417C90B00EEFF14 /* TotDataRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotDataRepositoryImpl.swift; sourceTree = "<group>"; };
 		9EB3542B2417C98F00EEFF14 /* DumyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumyEntity.swift; sourceTree = "<group>"; };
 		9EB3542E2417C9E700EEFF14 /* DummyMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyMapper.swift; sourceTree = "<group>"; };
 		9EB354312417CA6B00EEFF14 /* DummyRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyRest.swift; sourceTree = "<group>"; };
@@ -353,7 +353,7 @@
 		9EB354272417C8BB00EEFF14 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				9EB354282417C90B00EEFF14 /* DummyRepositoryImpl.swift */,
+				9EB354282417C90B00EEFF14 /* TotDataRepositoryImpl.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -745,7 +745,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EB354322417CA6B00EEFF14 /* DummyRest.swift in Sources */,
-				9EB354292417C90B00EEFF14 /* DummyRepositoryImpl.swift in Sources */,
+				9EB354292417C90B00EEFF14 /* TotDataRepositoryImpl.swift in Sources */,
 				9EB3542C2417C98F00EEFF14 /* DumyEntity.swift in Sources */,
 				9EB3542F2417C9E700EEFF14 /* DummyMapper.swift in Sources */,
 			);
