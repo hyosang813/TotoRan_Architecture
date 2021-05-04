@@ -2,13 +2,12 @@
 //  AppDelegate.swift
 //  TotoRan
 //
-//  Created by kosou.tei on 2019/10/09.
-//  Copyright © 2019 kosou.tei. All rights reserved.
+//  Created by kosou.tei on 2021/05/05.
 //
 
 import UIKit
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
