@@ -6,6 +6,7 @@
 //
 
 import Domain
+import Infra
 
 class PresenterBuilder {
     private let repositoryProvider: RepositoryProvider = RepositoryProvider()
