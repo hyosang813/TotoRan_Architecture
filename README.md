@@ -68,9 +68,10 @@
 ![image](https://user-images.githubusercontent.com/11004583/121110780-d0ba4180-c848-11eb-896b-ddd2df38b0a4.png)
 
 ## 出来てないけど今後やりたいと思ってること
-- EmbeddedFrameWorkによるモジュール化
-    - AppとDomainとInfraの三層分割
-    - ディレクトリ構成は分割されてるのでおそらくそんなに難しくない？
+- ~EmbeddedFrameWorkによるモジュール化~
+    - ~AppとDomainとInfraの三層分割~
+    - ~ディレクトリ構成は分割されてるのでおそらくそんなに難しくない？~
+    - [やってみた](https://github.com/hyosang813/TotoRan_Architecture/pull/4)
 - SwiftUIよる画面リッチ化
     - とりあえずアーキテクチャに主眼を置いたのでUIは簡素の極み
     - View部分はSwiftUIでちゃんと作りたい
