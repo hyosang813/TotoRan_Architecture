@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Domain // Modelを画面間でやりとりに使用（本来はTransition専用DOを用意すべき）
 
 class ResultViewControllerFactory {
     static func create(choiceDataModel: ChoiceDataModel) -> ResultViewController {

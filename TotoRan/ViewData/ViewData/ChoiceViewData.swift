@@ -4,7 +4,9 @@
 //
 //  Created by kosou.tei on 2021/05/20.
 //
+
 import UIKit
+import Domain
 
 struct ChoiceViewData {
     let id: Int
@@ -18,9 +20,9 @@ struct ChoiceViewData {
 extension ChoiceViewData {
     
     static func convertToViewData(frameModel: Frame) -> ChoiceViewData {
-        ChoiceViewData(id: frameModel.id,
-                      homeTeamName: frameModel.homeTeamName,
-                      awayTeamName: frameModel.awayTeamName,
+        ChoiceViewData(id: frameModel.getId(),
+                      homeTeamName: frameModel.getHomeTeamName(),
+                      awayTeamName: frameModel.getAwayTeamName(),
                       homeSelected: false,
                       awaySelected: false,
                       drawSelected: false)

@@ -7,6 +7,7 @@
 //
 
 import RxSwift
+import Domain
 
 protocol InitialViewPresentable {
     func didLoad()
@@ -83,22 +84,22 @@ class InitialViewPresenter: InitialViewPresentable {
     }
     
     private func getRateData(held: Held) {
-        Single.zip(dataHandleUseCase.getTotoRateData(heldNumber: held.heldNumber),
-                   dataHandleUseCase.getBookRateData(heldNumber: held.heldNumber))
+        Single.zip(dataHandleUseCase.getTotoRateData(heldNumber: held.getHeldNumber()),
+                   dataHandleUseCase.getBookRateData(heldNumber: held.getHeldNumber()))
             .subscribe(on: ConcurrentDispatchQueueScheduler(qos: .default))
             .observe(on: MainScheduler.instance)
             .subscribe(onSuccess: { [weak self] frameAndTotRates, bookRates in
                 var held = held
                 if let frameAndTotRates = frameAndTotRates {
-                    held.frames = frameAndTotRates.0
-                    held.totoRates = frameAndTotRates.1
+                    held.setFrames(frameAndTotRates.0)
+                    held.setTotoRates(frameAndTotRates.1)
                 } else {
                     self?.showAlert(reason: .dataGetFailed)
                     return
                 }
                 
                 if let bookRates = bookRates {
-                    held.bookRates = bookRates
+                    held.setBookRates(bookRates)
                 } else {
                     // まだboodsがないだけのパターンと失敗パターンがあるけど失敗パターンは一旦考慮外
                 }
@@ -108,7 +109,7 @@ class InitialViewPresenter: InitialViewPresentable {
                     return
                 }
                 
-                self?.view?.setHeldInfo(text: held.heldInfoText)
+                self?.view?.setHeldInfo(text: held.getHeldInfoText())
                 self?.view?.setUpOnSuccess()
                 self?.view?.hideLoadingAnimation()
                 

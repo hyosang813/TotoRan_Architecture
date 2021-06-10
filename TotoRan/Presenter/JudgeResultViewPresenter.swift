@@ -5,6 +5,8 @@
 //  Created by kosou.tei on 2021/06/01.
 //
 
+import Domain
+
 protocol JudgeResultViewPresentable {
     func didLoad()
 }

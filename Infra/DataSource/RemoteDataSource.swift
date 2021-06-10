@@ -5,8 +5,10 @@
 //
 //  Created by kosou.tei on 2021/05/13.
 //
+
 import Alamofire
 import RxSwift
+import Domain
 
 class RemoteDataSource {
     // 開催回データ取得

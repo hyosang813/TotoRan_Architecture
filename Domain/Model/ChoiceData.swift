@@ -5,7 +5,7 @@
 //  Created by kosou.tei on 2021/05/23.
 //
 
-struct ChoiceData {
+public struct ChoiceData {
     let id: Int
     let homeTeamName: String
     let awayTeamName: String
@@ -13,57 +13,71 @@ struct ChoiceData {
     var awaySelected: Bool
     var drawSelected: Bool
     
+    public init(id: Int,
+                homeTeamName: String,
+                awayTeamName: String,
+                homeSelected: Bool,
+                awaySelected: Bool,
+                drawSelected: Bool) {
+        self.id = id
+        self.homeTeamName = homeTeamName
+        self.awayTeamName = awayTeamName
+        self.homeSelected = homeSelected
+        self.awaySelected = awaySelected
+        self.drawSelected = drawSelected
+    }
+    
     func selectedCount() -> Int {
         [homeSelected, awaySelected, drawSelected].filter { $0 == true }.count
     }
 }
 
-struct ChoiceDataModel {
+public struct ChoiceDataModel {
     private let list: [ChoiceData]
     private var pickerSelectedDoubleCount = 0
     private var pickerSelectedTripleCount = 0
     
-    init(list: [ChoiceData]) {
+    public init(list: [ChoiceData]) {
         self.list = list
     }
     
-    var doubleCount: Int {
+    public var doubleCount: Int {
         self.list.filter { $0.selectedCount() == 2 }.count
     }
     
-    var tripleCount: Int {
+    public var tripleCount: Int {
         self.list.filter { $0.selectedCount() == 3 }.count
     }
     
-    var doublePickerList: [Int] {
+    public var doublePickerList: [Int] {
         [Int](doubleCount...8)
     }
     
-    var triplePickerList: [Int] {
+    public var triplePickerList: [Int] {
         [Int](tripleCount...5)
     }
     
-    func possibleTransition() -> Bool {
+    public func possibleTransition() -> Bool {
         self.possibleTransition(doubleCount: self.doubleCount, tripleCount: self.tripleCount)
     }
     
-    func possibleTransitionForPickerSelected(doubleCount: Int, tripleCount: Int) -> Bool {
+    public func possibleTransitionForPickerSelected(doubleCount: Int, tripleCount: Int) -> Bool {
         self.possibleTransition(doubleCount: doubleCount, tripleCount: tripleCount)
     }
     
-    func getChoiceDataList() -> [ChoiceData] {
+    public func getChoiceDataList() -> [ChoiceData] {
         self.list
     }
     
-    func getPickerSelectedDoubleCount() -> Int {
+    public func getPickerSelectedDoubleCount() -> Int {
         self.pickerSelectedDoubleCount
     }
     
-    func getPickerSelectedTripleCount() -> Int {
+    public func getPickerSelectedTripleCount() -> Int {
         self.pickerSelectedTripleCount
     }
 
-    mutating func setPickerSelectedCount(doubleCount: Int, tripleCount: Int) {
+    public mutating func setPickerSelectedCount(doubleCount: Int, tripleCount: Int) {
         self.pickerSelectedDoubleCount = doubleCount
         self.pickerSelectedTripleCount = tripleCount
     }

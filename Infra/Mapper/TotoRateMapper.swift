@@ -7,6 +7,7 @@
 //
 
 import Kanna
+import Domain
 
 class TotoRateMapper {
     

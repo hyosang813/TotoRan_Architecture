@@ -4,6 +4,7 @@
 //
 //  Created by kosou.tei on 2021/05/25.
 //
+
 import UIKit
 
 protocol CloseButtonViewCellDelegate: NSObjectProtocol {

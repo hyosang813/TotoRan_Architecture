@@ -5,6 +5,8 @@
 //  Created by kosou.tei on 2021/05/18.
 //
 
+import Domain
+
 protocol RateChartViewPresentable {
     func didLoad()
     func onTapSegmentedControll(index: Int)
