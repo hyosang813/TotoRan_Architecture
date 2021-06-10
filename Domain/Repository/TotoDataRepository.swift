@@ -5,6 +5,7 @@
 //
 //  Created by kosou.tei on 2021/05/13.
 //
+
 import RxSwift
 
 public protocol TotoDataRepository {

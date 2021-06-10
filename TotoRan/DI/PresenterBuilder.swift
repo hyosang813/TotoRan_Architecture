@@ -5,6 +5,8 @@
 //  Created by kosou.tei on 2021/05/15.
 //
 
+import Domain
+
 class PresenterBuilder {
     private let repositoryProvider: RepositoryProvider = RepositoryProvider()
     

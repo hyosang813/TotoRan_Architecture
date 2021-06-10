@@ -4,13 +4,19 @@
 //
 //  Created by kosou.tei on 2021/06/01.
 //
+
 import Foundation
 
-struct Judge {
+public struct Judge {
     let choiceDataList: [ChoiceData]
     let held: Held
     
-    func getJudgeData() -> String {
+    public init(choiceDataList: [ChoiceData], held: Held) {
+        self.choiceDataList = choiceDataList
+        self.held = held
+    }
+    
+    public func getJudgeData() -> String {
         
         let convertedTuple = self.convertBoolToNumber()
         let allPetternArray = self.makeAllPetternArray(convertArray: convertedTuple.convertArray, combiCount: convertedTuple.combiCount)

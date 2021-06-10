@@ -7,6 +7,7 @@
 //
 
 import Kanna
+import Domain
 
 class BookRateMapper {
     
@@ -36,10 +37,10 @@ class BookRateMapper {
             for i in 1...13 {
                 let tmpArrangeRates = arrangeRates[0...5]
                 rates.append(Rate(id: i,
-                                    heldNumber: heldNumber,
-                                    homeWinRate: tmpArrangeRates[3],
-                                    awayWinRate: tmpArrangeRates[5],
-                                    drawRate: tmpArrangeRates[4]))
+                                  heldNumber: heldNumber,
+                                  homeWinRate: tmpArrangeRates[3],
+                                  awayWinRate: tmpArrangeRates[5],
+                                  drawRate: tmpArrangeRates[4]))
                 arrangeRates.removeFirst(6)
             }
             

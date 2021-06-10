@@ -5,6 +5,8 @@
 //  Created by kosou.tei on 2021/05/20.
 //
 
+import Domain
+
 protocol ChoiceViewPresentable {
     func didLoad()
     func checkedSelectedData(tableViewData: ChoiceTableViewData?)

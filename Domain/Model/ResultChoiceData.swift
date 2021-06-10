@@ -5,19 +5,19 @@
 //  Created by kosou.tei on 2021/05/30.
 //
 
-struct ResultChoiceDataModel {
+public struct ResultChoiceDataModel {
     private let list: [ChoiceData]
     
-    init(choiceDataModel: ChoiceDataModel) {
+    public init(choiceDataModel: ChoiceDataModel) {
         self.list = Self.getMultiRandomChoiceDataList(choiceDataModel: choiceDataModel)
     }
     
-    func getList() -> [ChoiceData] {
+    public func getList() -> [ChoiceData] {
         self.list
     }
     
     // これも本来はVeiwData(Mapper)のロジックだがviewDataが必要ないのでここに定義
-    func resultDislpeyText() -> String {
+    public func resultDislpeyText() -> String {
         var text = ""
         self.list.forEach { model in
             let home = model.homeSelected ? "1" : "-"

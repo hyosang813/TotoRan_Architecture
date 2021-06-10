@@ -4,6 +4,7 @@
 //
 //  Created by kosou.tei on 2021/05/22.
 //
+
 import UIKit
 
 protocol TransitionButtonViewCellDelegate: NSObjectProtocol {

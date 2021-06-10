@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04CEF2199BA9B2737465F2AE /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8013C98357BBF5F62180A51 /* Pods_Domain.framework */; };
 		10E9BF8AF8A5B9A5F252293A /* Pods_TotoRan_TotoRanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DFAC1A2666BB7BA9D44B887 /* Pods_TotoRan_TotoRanUITests.framework */; };
 		146FB23DAF7F671D0EDD44EA /* Pods_TotoRanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537939EA91F1616B9DF30CFF /* Pods_TotoRanTests.framework */; };
 		170686422653602E0098CA8E /* RateChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170686412653602E0098CA8E /* RateChartViewController.swift */; };
@@ -16,23 +17,29 @@
 		172D454F265F68A900835E5B /* MultiChoiceSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D454E265F68A900835E5B /* MultiChoiceSettingViewController.swift */; };
 		172D45572662798000835E5B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D45562662798000835E5B /* ResultViewController.swift */; };
 		172D455C26627AEC00835E5B /* ResultViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D455B26627AEC00835E5B /* ResultViewPresenter.swift */; };
-		172D4561266353C400835E5B /* ResultChoiceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D4560266353C400835E5B /* ResultChoiceData.swift */; };
 		172D45EE266613C300835E5B /* JudgeResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D45ED266613C300835E5B /* JudgeResultViewController.swift */; };
 		172D45F32666173600835E5B /* JudgeResultViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D45F22666173600835E5B /* JudgeResultViewPresenter.swift */; };
-		172D466626662CB900835E5B /* Judge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D466526662CB900835E5B /* Judge.swift */; };
+		172D47B52671E85D00835E5B /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172D47AC2671E85D00835E5B /* Domain.framework */; };
+		172D47BC2671E85D00835E5B /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D47BB2671E85D00835E5B /* DomainTests.swift */; };
+		172D47C12671E85D00835E5B /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172D47AC2671E85D00835E5B /* Domain.framework */; };
+		172D47C22671E85D00835E5B /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 172D47AC2671E85D00835E5B /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		172D47DC2671E8A900835E5B /* Held.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771B5F92648FC68007920E2 /* Held.swift */; };
+		172D47E12671E8AE00835E5B /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771B60126490551007920E2 /* Frame.swift */; };
+		172D47E62671E8B300835E5B /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F75757264A191C009C9AC5 /* Rate.swift */; };
+		172D47EB2671E8B800835E5B /* ChoiceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1741E0B5265A76A500BD1588 /* ChoiceData.swift */; };
+		172D47F02671E8BE00835E5B /* ResultChoiceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D4560266353C400835E5B /* ResultChoiceData.swift */; };
+		172D47F52671E8C300835E5B /* Judge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D466526662CB900835E5B /* Judge.swift */; };
+		172D47FA2671E8CC00835E5B /* TotoDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F75780264CDE2C009C9AC5 /* TotoDataRepository.swift */; };
+		172D47FF2671E8D300835E5B /* DataHandleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B638F7264E123B00A0D0AF /* DataHandleUseCase.swift */; };
+		172D48042671E8D900835E5B /* DataHandleUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B638F2264E120000A0D0AF /* DataHandleUseCaseImpl.swift */; };
 		1741E0A3265948E000BD1588 /* ClearChoiceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1741E0A2265948E000BD1588 /* ClearChoiceViewCell.swift */; };
 		1741E0A82659490000BD1588 /* TransitionButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1741E0A72659490000BD1588 /* TransitionButtonViewCell.swift */; };
-		1741E0B6265A76A500BD1588 /* ChoiceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1741E0B5265A76A500BD1588 /* ChoiceData.swift */; };
-		1771B5FA2648FC68007920E2 /* Held.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771B5F92648FC68007920E2 /* Held.swift */; };
-		1771B60226490551007920E2 /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771B60126490551007920E2 /* Frame.swift */; };
 		179321712641B9BB00418225 /* TotoDataRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179321702641B9BB00418225 /* TotoDataRepositoryImpl.swift */; };
 		17B638CC264D5FBE00A0D0AF /* HeldMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B638CB264D5FBE00A0D0AF /* HeldMapper.swift */; };
 		17B638D1264D613400A0D0AF /* HeldDetailMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B638D0264D613400A0D0AF /* HeldDetailMapper.swift */; };
 		17B638D6264D622B00A0D0AF /* TotoRateMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B638D5264D622B00A0D0AF /* TotoRateMapper.swift */; };
 		17B638DB264D630500A0D0AF /* BookRateMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B638DA264D630500A0D0AF /* BookRateMapper.swift */; };
 		17B638E8264E0C0700A0D0AF /* RepositoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B638E7264E0C0700A0D0AF /* RepositoryProvider.swift */; };
-		17B638F3264E120000A0D0AF /* DataHandleUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B638F2264E120000A0D0AF /* DataHandleUseCaseImpl.swift */; };
-		17B638F8264E123B00A0D0AF /* DataHandleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B638F7264E123B00A0D0AF /* DataHandleUseCase.swift */; };
 		17B6390B264E19A500A0D0AF /* InitialViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B6390A264E19A500A0D0AF /* InitialViewPresenter.swift */; };
 		17B63917264FEF5200A0D0AF /* PresenterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B63916264FEF5200A0D0AF /* PresenterBuilder.swift */; };
 		17BA274C265CF8C50028CB42 /* CloseButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BA274B265CF8C50028CB42 /* CloseButtonViewCell.swift */; };
@@ -41,10 +48,8 @@
 		17E68024265693A1004E5AEA /* ChoiceViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E68023265693A1004E5AEA /* ChoiceViewData.swift */; };
 		17E6802C265754D8004E5AEA /* ChoiceTableViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E6802B265754D8004E5AEA /* ChoiceTableViewData.swift */; };
 		17E680322658CADC004E5AEA /* ChoiceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E680312658CADC004E5AEA /* ChoiceViewCell.swift */; };
-		17F75758264A191C009C9AC5 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F75757264A191C009C9AC5 /* Rate.swift */; };
 		17F75773264CCE57009C9AC5 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F75772264CCE57009C9AC5 /* RemoteDataSource.swift */; };
 		17F7577B264CCE95009C9AC5 /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7577A264CCE95009C9AC5 /* LocalDataSource.swift */; };
-		17F75781264CDE2C009C9AC5 /* TotoDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F75780264CDE2C009C9AC5 /* TotoDataRepository.swift */; };
 		17FDC3262641A0E300A9EFAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FDC3252641A0E300A9EFAE /* AppDelegate.swift */; };
 		17FDC3282641A0E300A9EFAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FDC3272641A0E300A9EFAE /* SceneDelegate.swift */; };
 		17FDC32A2641A0E300A9EFAE /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FDC3292641A0E300A9EFAE /* InitialViewController.swift */; };
@@ -57,6 +62,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		172D47B62671E85D00835E5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17FDC31A2641A0E300A9EFAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 172D47AB2671E85D00835E5B;
+			remoteInfo = Domain;
+		};
+		172D47B82671E85D00835E5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17FDC31A2641A0E300A9EFAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17FDC3212641A0E300A9EFAE;
+			remoteInfo = TotoRan;
+		};
+		172D47BF2671E85D00835E5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17FDC31A2641A0E300A9EFAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 172D47AB2671E85D00835E5B;
+			remoteInfo = Domain;
+		};
 		17FDC3392641A0E500A9EFAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 17FDC31A2641A0E300A9EFAE /* Project object */;
@@ -73,6 +99,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		172D47C32671E85D00835E5B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				172D47C22671E85D00835E5B /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		083EADC0A1FFE0082F78C4B2 /* Pods-TotoRanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRanTests.release.xcconfig"; path = "Target Support Files/Pods-TotoRanTests/Pods-TotoRanTests.release.xcconfig"; sourceTree = "<group>"; };
 		0DFAC1A2666BB7BA9D44B887 /* Pods_TotoRan_TotoRanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TotoRan_TotoRanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +128,12 @@
 		172D45ED266613C300835E5B /* JudgeResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JudgeResultViewController.swift; sourceTree = "<group>"; };
 		172D45F22666173600835E5B /* JudgeResultViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JudgeResultViewPresenter.swift; sourceTree = "<group>"; };
 		172D466526662CB900835E5B /* Judge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Judge.swift; sourceTree = "<group>"; };
+		172D47AC2671E85D00835E5B /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		172D47AE2671E85D00835E5B /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		172D47AF2671E85D00835E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		172D47B42671E85D00835E5B /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		172D47BB2671E85D00835E5B /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
+		172D47BD2671E85D00835E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1741E0A2265948E000BD1588 /* ClearChoiceViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearChoiceViewCell.swift; sourceTree = "<group>"; };
 		1741E0A72659490000BD1588 /* TransitionButtonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionButtonViewCell.swift; sourceTree = "<group>"; };
 		1741E0B5265A76A500BD1588 /* ChoiceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceData.swift; sourceTree = "<group>"; };
@@ -128,18 +174,38 @@
 		17FDC3432641A0E500A9EFAE /* TotoRanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TotoRanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17FDC3472641A0E500A9EFAE /* TotoRanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotoRanUITests.swift; sourceTree = "<group>"; };
 		17FDC3492641A0E500A9EFAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D4CAA3CCE1B63E50A183149 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
+		2C140D79F9CBD428F61448D3 /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
 		537939EA91F1616B9DF30CFF /* Pods_TotoRanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TotoRanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		726D672B129C94CAAA534E7C /* Pods_TotoRan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TotoRan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8013C98357BBF5F62180A51 /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50C86A3E27E17395C3DA8F2 /* Pods-TotoRan-TotoRanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRan-TotoRanUITests.release.xcconfig"; path = "Target Support Files/Pods-TotoRan-TotoRanUITests/Pods-TotoRan-TotoRanUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D9B017DD0B75970500F12C20 /* Pods-TotoRanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRanTests.debug.xcconfig"; path = "Target Support Files/Pods-TotoRanTests/Pods-TotoRanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE448251539E77BDA920F971 /* Pods-TotoRan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TotoRan.debug.xcconfig"; path = "Target Support Files/Pods-TotoRan/Pods-TotoRan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		172D47A92671E85D00835E5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CEF2199BA9B2737465F2AE /* Pods_Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172D47B12671E85D00835E5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172D47B52671E85D00835E5B /* Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17FDC31F2641A0E300A9EFAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172D47C12671E85D00835E5B /* Domain.framework in Frameworks */,
 				F88C765D783893FB44718835 /* Pods_TotoRan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,9 +238,20 @@
 			path = ViewData;
 			sourceTree = "<group>";
 		};
+		172D47BA2671E85D00835E5B /* DomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				172D47BB2671E85D00835E5B /* DomainTests.swift */,
+				172D47BD2671E85D00835E5B /* Info.plist */,
+			);
+			path = DomainTests;
+			sourceTree = "<group>";
+		};
 		1771B5F72648FC02007920E2 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				172D47AE2671E85D00835E5B /* Domain.h */,
+				172D47AF2671E85D00835E5B /* Info.plist */,
 				17F75770264CCC2A009C9AC5 /* UseCase */,
 				17F7577F264CDDEC009C9AC5 /* Repository */,
 				1771B5F82648FC12007920E2 /* Model */,
@@ -355,6 +432,7 @@
 				1793216E2641B97700418225 /* Infra */,
 				17FDC33B2641A0E500A9EFAE /* TotoRanTests */,
 				17FDC3462641A0E500A9EFAE /* TotoRanUITests */,
+				172D47BA2671E85D00835E5B /* DomainTests */,
 				17FDC3232641A0E300A9EFAE /* Products */,
 				DFCEC90D7FAA8DDAA303A9D1 /* Pods */,
 				A25D0047672CF159A911F199 /* Frameworks */,
@@ -367,6 +445,8 @@
 				17FDC3222641A0E300A9EFAE /* TotoRan.app */,
 				17FDC3382641A0E500A9EFAE /* TotoRanTests.xctest */,
 				17FDC3432641A0E500A9EFAE /* TotoRanUITests.xctest */,
+				172D47AC2671E85D00835E5B /* Domain.framework */,
+				172D47B42671E85D00835E5B /* DomainTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -411,6 +491,7 @@
 				726D672B129C94CAAA534E7C /* Pods_TotoRan.framework */,
 				0DFAC1A2666BB7BA9D44B887 /* Pods_TotoRan_TotoRanUITests.framework */,
 				537939EA91F1616B9DF30CFF /* Pods_TotoRanTests.framework */,
+				B8013C98357BBF5F62180A51 /* Pods_Domain.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -424,13 +505,63 @@
 				D50C86A3E27E17395C3DA8F2 /* Pods-TotoRan-TotoRanUITests.release.xcconfig */,
 				D9B017DD0B75970500F12C20 /* Pods-TotoRanTests.debug.xcconfig */,
 				083EADC0A1FFE0082F78C4B2 /* Pods-TotoRanTests.release.xcconfig */,
+				2C140D79F9CBD428F61448D3 /* Pods-Domain.debug.xcconfig */,
+				1D4CAA3CCE1B63E50A183149 /* Pods-Domain.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		172D47A72671E85D00835E5B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		172D47AB2671E85D00835E5B /* Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 172D47C82671E85D00835E5B /* Build configuration list for PBXNativeTarget "Domain" */;
+			buildPhases = (
+				41E669CFB2A8C443C240FFA6 /* [CP] Check Pods Manifest.lock */,
+				172D47A72671E85D00835E5B /* Headers */,
+				172D47A82671E85D00835E5B /* Sources */,
+				172D47A92671E85D00835E5B /* Frameworks */,
+				172D47AA2671E85D00835E5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Domain;
+			productName = Domain;
+			productReference = 172D47AC2671E85D00835E5B /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		172D47B32671E85D00835E5B /* DomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 172D47C92671E85D00835E5B /* Build configuration list for PBXNativeTarget "DomainTests" */;
+			buildPhases = (
+				172D47B02671E85D00835E5B /* Sources */,
+				172D47B12671E85D00835E5B /* Frameworks */,
+				172D47B22671E85D00835E5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				172D47B72671E85D00835E5B /* PBXTargetDependency */,
+				172D47B92671E85D00835E5B /* PBXTargetDependency */,
+			);
+			name = DomainTests;
+			productName = DomainTests;
+			productReference = 172D47B42671E85D00835E5B /* DomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		17FDC3212641A0E300A9EFAE /* TotoRan */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17FDC34C2641A0E500A9EFAE /* Build configuration list for PBXNativeTarget "TotoRan" */;
@@ -440,10 +571,12 @@
 				17FDC31F2641A0E300A9EFAE /* Frameworks */,
 				17FDC3202641A0E300A9EFAE /* Resources */,
 				2D04BB89ACE34E2E5D8FA144 /* [CP] Embed Pods Frameworks */,
+				172D47C32671E85D00835E5B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				172D47C02671E85D00835E5B /* PBXTargetDependency */,
 			);
 			name = TotoRan;
 			productName = TotoRan;
@@ -498,6 +631,13 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					172D47AB2671E85D00835E5B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					172D47B32671E85D00835E5B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 17FDC3212641A0E300A9EFAE;
+					};
 					17FDC3212641A0E300A9EFAE = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -527,11 +667,27 @@
 				17FDC3212641A0E300A9EFAE /* TotoRan */,
 				17FDC3372641A0E500A9EFAE /* TotoRanTests */,
 				17FDC3422641A0E500A9EFAE /* TotoRanUITests */,
+				172D47AB2671E85D00835E5B /* Domain */,
+				172D47B32671E85D00835E5B /* DomainTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		172D47AA2671E85D00835E5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172D47B22671E85D00835E5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17FDC3202641A0E300A9EFAE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -574,6 +730,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TotoRan/Pods-TotoRan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41E669CFB2A8C443C240FFA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Domain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5D180E3A748AD692E1A087E4 /* [CP] Embed Pods Frameworks */ = {
@@ -662,6 +840,30 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		172D47A82671E85D00835E5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172D47FA2671E8CC00835E5B /* TotoDataRepository.swift in Sources */,
+				172D47FF2671E8D300835E5B /* DataHandleUseCase.swift in Sources */,
+				172D47EB2671E8B800835E5B /* ChoiceData.swift in Sources */,
+				172D47E62671E8B300835E5B /* Rate.swift in Sources */,
+				172D47DC2671E8A900835E5B /* Held.swift in Sources */,
+				172D47E12671E8AE00835E5B /* Frame.swift in Sources */,
+				172D48042671E8D900835E5B /* DataHandleUseCaseImpl.swift in Sources */,
+				172D47F02671E8BE00835E5B /* ResultChoiceData.swift in Sources */,
+				172D47F52671E8C300835E5B /* Judge.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172D47B02671E85D00835E5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172D47BC2671E85D00835E5B /* DomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17FDC31E2641A0E300A9EFAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -670,13 +872,10 @@
 				17BA274C265CF8C50028CB42 /* CloseButtonViewCell.swift in Sources */,
 				172D454F265F68A900835E5B /* MultiChoiceSettingViewController.swift in Sources */,
 				1741E0A82659490000BD1588 /* TransitionButtonViewCell.swift in Sources */,
-				1771B5FA2648FC68007920E2 /* Held.swift in Sources */,
 				17FDC32A2641A0E300A9EFAE /* InitialViewController.swift in Sources */,
 				179321712641B9BB00418225 /* TotoDataRepositoryImpl.swift in Sources */,
-				17F75758264A191C009C9AC5 /* Rate.swift in Sources */,
 				17E6801D265687AB004E5AEA /* ChoiceViewPresenter.swift in Sources */,
 				170686422653602E0098CA8E /* RateChartViewController.swift in Sources */,
-				17F75781264CDE2C009C9AC5 /* TotoDataRepository.swift in Sources */,
 				172D45EE266613C300835E5B /* JudgeResultViewController.swift in Sources */,
 				1706868126537D460098CA8E /* ChartViewData.swift in Sources */,
 				17E680322658CADC004E5AEA /* ChoiceViewCell.swift in Sources */,
@@ -684,26 +883,20 @@
 				17B638D1264D613400A0D0AF /* HeldDetailMapper.swift in Sources */,
 				17B638D6264D622B00A0D0AF /* TotoRateMapper.swift in Sources */,
 				1741E0A3265948E000BD1588 /* ClearChoiceViewCell.swift in Sources */,
-				1741E0B6265A76A500BD1588 /* ChoiceData.swift in Sources */,
 				17B6390B264E19A500A0D0AF /* InitialViewPresenter.swift in Sources */,
-				1771B60226490551007920E2 /* Frame.swift in Sources */,
 				17F7577B264CCE95009C9AC5 /* LocalDataSource.swift in Sources */,
 				17FDC3262641A0E300A9EFAE /* AppDelegate.swift in Sources */,
 				17E680182655FF3E004E5AEA /* ChoiceViewController.swift in Sources */,
 				17E6802C265754D8004E5AEA /* ChoiceTableViewData.swift in Sources */,
-				17B638F3264E120000A0D0AF /* DataHandleUseCaseImpl.swift in Sources */,
-				172D4561266353C400835E5B /* ResultChoiceData.swift in Sources */,
 				172D45572662798000835E5B /* ResultViewController.swift in Sources */,
 				1706868626537DD80098CA8E /* RateChartTableViewData.swift in Sources */,
 				17B638E8264E0C0700A0D0AF /* RepositoryProvider.swift in Sources */,
-				17B638F8264E123B00A0D0AF /* DataHandleUseCase.swift in Sources */,
 				17B638DB264D630500A0D0AF /* BookRateMapper.swift in Sources */,
 				172D45F32666173600835E5B /* JudgeResultViewPresenter.swift in Sources */,
 				17B63917264FEF5200A0D0AF /* PresenterBuilder.swift in Sources */,
 				17E68024265693A1004E5AEA /* ChoiceViewData.swift in Sources */,
 				17FDC3282641A0E300A9EFAE /* SceneDelegate.swift in Sources */,
 				17B638CC264D5FBE00A0D0AF /* HeldMapper.swift in Sources */,
-				172D466626662CB900835E5B /* Judge.swift in Sources */,
 				172D455C26627AEC00835E5B /* ResultViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -727,6 +920,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		172D47B72671E85D00835E5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 172D47AB2671E85D00835E5B /* Domain */;
+			targetProxy = 172D47B62671E85D00835E5B /* PBXContainerItemProxy */;
+		};
+		172D47B92671E85D00835E5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17FDC3212641A0E300A9EFAE /* TotoRan */;
+			targetProxy = 172D47B82671E85D00835E5B /* PBXContainerItemProxy */;
+		};
+		172D47C02671E85D00835E5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 172D47AB2671E85D00835E5B /* Domain */;
+			targetProxy = 172D47BF2671E85D00835E5B /* PBXContainerItemProxy */;
+		};
 		17FDC33A2641A0E500A9EFAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 17FDC3212641A0E300A9EFAE /* TotoRan */;
@@ -759,6 +967,106 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		172D47C42671E85D00835E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C140D79F9CBD428F61448D3 /* Pods-Domain.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 489E83K4WZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tei.kosou.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		172D47C52671E85D00835E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D4CAA3CCE1B63E50A183149 /* Pods-Domain.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 489E83K4WZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tei.kosou.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		172D47C62671E85D00835E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 489E83K4WZ;
+				INFOPLIST_FILE = DomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tei.kosou.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TotoRan.app/TotoRan";
+			};
+			name = Debug;
+		};
+		172D47C72671E85D00835E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 489E83K4WZ;
+				INFOPLIST_FILE = DomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tei.kosou.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TotoRan.app/TotoRan";
+			};
+			name = Release;
+		};
 		17FDC34A2641A0E500A9EFAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -879,6 +1187,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EE448251539E77BDA920F971 /* Pods-TotoRan.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -901,6 +1210,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17D61C55F0C11C5591358FFF /* Pods-TotoRan.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1006,6 +1316,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		172D47C82671E85D00835E5B /* Build configuration list for PBXNativeTarget "Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172D47C42671E85D00835E5B /* Debug */,
+				172D47C52671E85D00835E5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		172D47C92671E85D00835E5B /* Build configuration list for PBXNativeTarget "DomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172D47C62671E85D00835E5B /* Debug */,
+				172D47C72671E85D00835E5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		17FDC31D2641A0E300A9EFAE /* Build configuration list for PBXProject "TotoRan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

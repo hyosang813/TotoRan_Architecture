@@ -4,8 +4,8 @@
 //
 //  Created by kosou.tei on 2021/06/01.
 //
-
 import UIKit
+import Domain // Modelを画面間でやりとりに使用（本来はTransition専用DOを用意すべき）
 
 class JudgeResultViewControllerFactory {
     static func create(choiceDataList: [ChoiceData]) -> JudgeResultViewController {

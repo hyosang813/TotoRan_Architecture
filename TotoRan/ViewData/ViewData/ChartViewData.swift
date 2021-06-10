@@ -5,6 +5,8 @@
 //  Created by kosou.tei on 2021/05/18.
 //
 
+import Domain
+
 struct ChartViewData {
     let id: Int
     let homeTeamName: String
@@ -17,11 +19,11 @@ struct ChartViewData {
 extension ChartViewData {
     
     static func convertToViewData(frameModel: Frame, rateModel: Rate) -> ChartViewData {
-        ChartViewData(id: frameModel.id,
-                      homeTeamName: frameModel.homeTeamName,
-                      awayTeamName: frameModel.awayTeamName,
-                      homeWinRate: rateModel.homeWinRate,
-                      awayWinRate: rateModel.awayWinRate,
-                      drawRate: rateModel.drawRate)
+        ChartViewData(id: frameModel.getId(),
+                      homeTeamName: frameModel.getHomeTeamName(),
+                      awayTeamName: frameModel.getAwayTeamName(),
+                      homeWinRate: rateModel.getHomeWinRate(),
+                      awayWinRate: rateModel.getAwayWinRate(),
+                      drawRate: rateModel.getDrawRate())
     }
 }

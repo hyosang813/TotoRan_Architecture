@@ -5,13 +5,15 @@
 //  Created by kosou.tei on 2021/05/18.
 //
 
+import Domain
+
 struct RateChartTableViewData {
     private let totoList: [ChartViewData]?
     private let bookList: [ChartViewData]?
     
     init(held: Held) {
-        self.totoList = RateChartTableViewData.setRates(frames: held.frames, rates: held.totoRates)
-        self.bookList = RateChartTableViewData.setRates(frames: held.frames, rates: held.bookRates)
+        self.totoList = RateChartTableViewData.setRates(frames: held.getFrames(), rates: held.getTotoRates())
+        self.bookList = RateChartTableViewData.setRates(frames: held.getFrames(), rates: held.getBookRates())
     }
     
     // SwiftUIで画面を綺麗にするまでは単純にテキストを返す
@@ -67,8 +69,8 @@ struct RateChartTableViewData {
         var list: [ChartViewData] = []
         
         for id in 1...13 {
-            let filteredFrame = frames.filter { $0.id == id }.first
-            let filteredRate = rates.filter { $0.id == id }.first
+            let filteredFrame = frames.filter { $0.getId() == id }.first
+            let filteredRate = rates.filter { $0.getId() == id }.first
             
             guard let frame = filteredFrame, let rate = filteredRate else {
                 return nil

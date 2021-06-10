@@ -5,11 +5,13 @@
 //  Created by kosou.tei on 2021/05/21.
 //
 
+import Domain
+
 struct ChoiceTableViewData {
     private var list: [ChoiceViewData]?
     
     init(held: Held) {
-        self.list = ChoiceTableViewData.setViewData(frames: held.frames)
+        self.list = ChoiceTableViewData.setViewData(frames: held.getFrames())
     }
     
     func count() -> Int {
@@ -68,7 +70,7 @@ struct ChoiceTableViewData {
         var list: [ChoiceViewData] = []
         
         for id in 1...13 {
-            let filteredFrame = frames.filter { $0.id == id }.first
+            let filteredFrame = frames.filter { $0.getId() == id }.first
             guard let frame = filteredFrame else {
                 return nil
             }

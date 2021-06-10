@@ -21,3 +21,9 @@ target 'TotoRan' do
   end
 
 end
+
+target 'Domain' do
+  use_frameworks!
+  
+  pod "RxSwift", "6.1.0"
+end
