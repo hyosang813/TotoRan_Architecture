@@ -72,14 +72,15 @@
     - ~AppとDomainとInfraの三層分割~
     - ~ディレクトリ構成は分割されてるのでおそらくそんなに難しくない？~
     - [やってみた](https://github.com/hyosang813/TotoRan_Architecture/pull/4)
+- ~RxSwiftをCombineに置き換え~
+    - ~RxSwiftの方が慣れていたので~
+    - ~SwiftUIに置き換えるなら同時に相性が良い(はず)のCombineに置き換えたい~
+    - [やってみた](https://github.com/hyosang813/TotoRan_Architecture/pull/5)
 - UnitTest書く
     - アーキテクチャはTestableなコードを書くためのものでもあるのでちゃんと書いてく
 - SwiftUIよる画面リッチ化
     - とりあえずアーキテクチャに主眼を置いたのでUIは簡素の極み
     - View部分はSwiftUIでちゃんと作りたい
-- RxSwiftをCombineに置き換え
-    - RxSwiftの方が慣れていたので
-    - SwiftUIに置き換えるなら同時に相性が良い(はず)のCombineに置き換えたい
 - MVVMやVIPERへの移行
     - SwiftUI + CombineにするならMVVM導入はマスト？？？
 - 番外編
