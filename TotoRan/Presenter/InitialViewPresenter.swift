@@ -6,8 +6,9 @@
 //  Created by kosou.tei on 2021/05/14.
 //
 
-import RxSwift
+import Combine
 import Domain
+import Foundation
 
 protocol InitialViewPresentable {
     func didLoad()
@@ -20,7 +21,6 @@ class InitialViewPresenter: InitialViewPresentable {
     
     private weak var view: InitialViewable?
     private let dataHandleUseCase: DataHandleUseCase
-    private let disposeBag = DisposeBag()
     
     init(view: InitialViewable, dataHandleUseCase: DataHandleUseCase) {
         self.view = view
@@ -52,53 +52,68 @@ class InitialViewPresenter: InitialViewPresentable {
     }
     
     private func getHeldData() {
-        dataHandleUseCase.getHeldData()
-            .subscribe(on: ConcurrentDispatchQueueScheduler(qos: .default))
-            .observe(on: MainScheduler.instance)
-            .subscribe(onSuccess: { [weak self] heldNumber in
-                if let heldNumber = heldNumber {
+        self.dataHandleUseCase.getHeldData()
+            .subscribe(on: DispatchQueue.global())
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { [weak self] completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure:
+                    self?.showAlert(reason: .dataGetFailed)
+                }
+            }, receiveValue: { [weak self] response in
+                if let heldNumber = response {
                     self?.getHeldDetailData(heldNumber: heldNumber)
                 } else {
                     self?.showAlert(reason: .noHeld)
                 }
-            }, onFailure: { [weak self] error in
-                self?.showAlert(reason: .dataGetFailed)
             })
-            .disposed(by: disposeBag)
     }
     
     private func getHeldDetailData(heldNumber: Int) {
-        dataHandleUseCase.getHeldDetailData(heldNumber: heldNumber)
-            .subscribe(on: ConcurrentDispatchQueueScheduler(qos: .default))
-            .observe(on: MainScheduler.instance)
-            .subscribe(onSuccess: { [weak self] held in
-                if let held = held {
+        self.dataHandleUseCase.getHeldDetailData(heldNumber: heldNumber)
+            .subscribe(on: DispatchQueue.global())
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { [weak self] completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure:
+                    self?.showAlert(reason: .dataGetFailed)
+                }
+            }, receiveValue: { [weak self] response in
+                if let held = response {
                     self?.getRateData(held: held)
                 } else {
                     self?.showAlert(reason: .dataGetFailed)
                 }
-            }, onFailure: { [weak self] error in
-                self?.showAlert(reason: .dataGetFailed)
             })
-            .disposed(by: disposeBag)
     }
     
     private func getRateData(held: Held) {
-        Single.zip(dataHandleUseCase.getTotoRateData(heldNumber: held.getHeldNumber()),
-                   dataHandleUseCase.getBookRateData(heldNumber: held.getHeldNumber()))
-            .subscribe(on: ConcurrentDispatchQueueScheduler(qos: .default))
-            .observe(on: MainScheduler.instance)
-            .subscribe(onSuccess: { [weak self] frameAndTotRates, bookRates in
+        Publishers.Zip(self.dataHandleUseCase.getTotoRateData(heldNumber: held.getHeldNumber()),
+                       self.dataHandleUseCase.getBookRateData(heldNumber: held.getHeldNumber()))
+            .subscribe(on: DispatchQueue.global())
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { [weak self] completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure:
+                    self?.showAlert(reason: .dataGetFailed)
+                }
+            }, receiveValue: { [weak self] response in
                 var held = held
-                if let frameAndTotRates = frameAndTotRates {
+                if let frameAndTotRates = response.0 {
                     held.setFrames(frameAndTotRates.0)
                     held.setTotoRates(frameAndTotRates.1)
                 } else {
                     self?.showAlert(reason: .dataGetFailed)
                     return
                 }
-                
-                if let bookRates = bookRates {
+
+                if let bookRates = response.1 {
                     held.setBookRates(bookRates)
                 } else {
                     // まだboodsがないだけのパターンと失敗パターンがあるけど失敗パターンは一旦考慮外
@@ -108,14 +123,10 @@ class InitialViewPresenter: InitialViewPresentable {
                     self?.showAlert(reason: .dataSaveFailed)
                     return
                 }
-                
+
                 self?.view?.setHeldInfo(text: held.getHeldInfoText())
                 self?.view?.setUpOnSuccess()
                 self?.view?.hideLoadingAnimation()
-                
-            }, onFailure: { [weak self] error in
-                self?.showAlert(reason: .dataGetFailed)
             })
-            .disposed(by: disposeBag)
     }
 }

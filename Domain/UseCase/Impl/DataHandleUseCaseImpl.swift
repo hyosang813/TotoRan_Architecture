@@ -6,7 +6,7 @@
 //  Created by kosou.tei on 2021/05/14.
 //
 
-import RxSwift
+import Combine
 
 public class DataHandleUseCaseImpl: DataHandleUseCase {
     
@@ -16,19 +16,19 @@ public class DataHandleUseCaseImpl: DataHandleUseCase {
         self.totoDataRepository = totoDataRepository
     }
     
-    public func getHeldData() -> Single<Int?> {
+    public func getHeldData() -> Future<Int?, Error> {
         self.totoDataRepository.getHeldData()
     }
     
-    public func getHeldDetailData(heldNumber: Int) -> Single<Held?> {
+    public func getHeldDetailData(heldNumber: Int) -> Future<Held?, Error> {
         self.totoDataRepository.getHeldDetailData(heldNumber: heldNumber)
     }
     
-    public func getTotoRateData(heldNumber: Int) -> Single<([Frame], [Rate])?> {
+    public func getTotoRateData(heldNumber: Int) -> Future<([Frame], [Rate])?, Error> {
         self.totoDataRepository.getTotoRateData(heldNumber: heldNumber)
     }
     
-    public func getBookRateData(heldNumber: Int) -> Single<[Rate]?> {
+    public func getBookRateData(heldNumber: Int) -> Future<[Rate]?, Error> {
         self.totoDataRepository.getBookRateData(heldNumber: heldNumber)
     }
     

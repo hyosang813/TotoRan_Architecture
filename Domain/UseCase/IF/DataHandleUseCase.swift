@@ -5,13 +5,13 @@
 //  Created by kosou.tei on 2021/05/14.
 //
 
-import RxSwift
+import Combine
 
 public protocol DataHandleUseCase {
-    func getHeldData() -> Single<Int?>
-    func getHeldDetailData(heldNumber: Int) -> Single<Held?>
-    func getTotoRateData(heldNumber: Int) -> Single<([Frame], [Rate])?>
-    func getBookRateData(heldNumber: Int) -> Single<[Rate]?>
+    func getHeldData() -> Future<Int?, Error>
+    func getHeldDetailData(heldNumber: Int) -> Future<Held?, Error>
+    func getTotoRateData(heldNumber: Int) -> Future<([Frame], [Rate])?, Error>
+    func getBookRateData(heldNumber: Int) -> Future<[Rate]?, Error>
     func getHeld() -> Held?
     func saveHeld(_ held: Held) -> Bool
 }
