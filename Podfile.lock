@@ -5,14 +5,12 @@ PODS:
   - NVActivityIndicatorView (4.8.0):
     - NVActivityIndicatorView/Presenter (= 4.8.0)
   - NVActivityIndicatorView/Presenter (4.8.0)
-  - RxSwift (6.1.0)
 
 DEPENDENCIES:
   - Alamofire (= 5.4.3)
   - Disk (= 0.6.4)
   - Kanna (= 5.2.4)
   - NVActivityIndicatorView (= 4.8.0)
-  - RxSwift (= 6.1.0)
 
 SPEC REPOS:
   trunk:
@@ -20,15 +18,13 @@ SPEC REPOS:
     - Disk
     - Kanna
     - NVActivityIndicatorView
-    - RxSwift
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   Disk: dcee5c2e98fb72f9a924cde8da8435b08244a80e
   Kanna: b9d00d7c11428308c7f95e1f1f84b8205f567a8f
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
-  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
 
-PODFILE CHECKSUM: 4d0708787853151a916e5901f3c64de135a3555b
+PODFILE CHECKSUM: 71b626bb8a8ce078293d899150f0fcada9a31f4c
 
 COCOAPODS: 1.10.1

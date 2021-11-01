@@ -7,14 +7,14 @@
 //
 
 import Alamofire
-import RxSwift
+import Combine
 import Domain
 
 class RemoteDataSource {
     // 開催回データ取得
-    public func getHeldData() -> Single<Int?> {
+    public func getHeldData() -> Future<Int?, Error> {
         let url = "https://toto.rakuten.co.jp/toto/schedule/"
-        return Single.create { subscriber in
+        return Future<Int?, Error> { subscriber in
             AF.request(url).responseString { response in
                 switch response.result {
                 case .success(let html):
@@ -23,14 +23,13 @@ class RemoteDataSource {
                     subscriber(.failure(error))
                 }
             }
-            return Disposables.create()
         }
     }
     
     // 開催詳細データ取得
-    public func getHeldDetailData(heldNumber: Int) -> Single<Held?> {
+    public func getHeldDetailData(heldNumber: Int) -> Future<Held?, Error> {
         let url = "https://store.toto-dream.com/dcs/subos/screen/pi01/spin000/PGSPIN00001DisptotoLotInfo.form?holdCntId=\(heldNumber)"
-        return Single.create { subscriber in
+        return Future<Held?, Error> { subscriber in
             AF.request(url).responseString { response in
                 switch response.result {
                 case .success(let html):
@@ -39,14 +38,13 @@ class RemoteDataSource {
                     subscriber(.failure(error))
                 }
             }
-            return Disposables.create()
         }
     }
     
     // Toto支持率データ取得
-    public func getTotoRateData(heldNumber: Int) -> Single<([Frame], [Rate])?> {
+    public func getTotoRateData(heldNumber: Int) -> Future<([Frame], [Rate])?, Error> {
         let url = "https://store.toto-dream.com/dcs/subos/screen/pi09/spin003/PGSPIN00301InitVoteRate.form?holdCntId=\(heldNumber)&commodityId=01"
-        return Single.create { subscriber in
+        return Future<([Frame], [Rate])?, Error> { subscriber in
             AF.request(url).responseString { response in
                 switch response.result {
                 case .success(let html):
@@ -55,15 +53,14 @@ class RemoteDataSource {
                     subscriber(.failure(error))
                 }
             }
-            return Disposables.create()
         }
     }
     
     // Book支持率データ取得
-    public func getBookRateData(heldNumber: Int) -> Single<[Rate]?> {
+    public func getBookRateData(heldNumber: Int) -> Future<[Rate]?, Error> {
         // Bookデータのサイトがhttps対応してないのでATS無効にしてるけど、おそらくこれでは審査通らないね
         let url = "http://tobakushi.net/toto/tototimes/bg_\(heldNumber).html"
-        return Single.create { subscriber in
+        return Future<[Rate]?, Error> { subscriber in
             AF.request(url).responseString { response in
                 switch response.result {
                 case .success(let html):
@@ -72,7 +69,6 @@ class RemoteDataSource {
                     subscriber(.failure(error))
                 }
             }
-            return Disposables.create()
         }
     }
 }
